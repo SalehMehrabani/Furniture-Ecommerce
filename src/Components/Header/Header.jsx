@@ -53,7 +53,7 @@ function Header() {
           Join Membership
         </motion.button>
       </div>
-      <span className="absolute bottom-5 left-1/2 -translate-x-1/2 p-4 border border-slate-100 rounded-full text-slate-100 w-max">
+      <span className="absolute bottom-5 left-1/2 -translate-x-1/2 p-4 border border-slate-100 rounded-full text-slate-100 w-max hover:bg-white hover:text-stone-800 transition-colors cursor-pointer">
         <ArrowLongDownIcon className="size-8 font-bold" />
       </span>
     </header>
