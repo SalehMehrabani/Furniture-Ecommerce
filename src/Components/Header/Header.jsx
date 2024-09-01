@@ -12,7 +12,7 @@ function Header() {
   ];
   return (
     <header
-      className="relative p-2 rounded-xl w-full h-max md:h-screen flex flex-col gap-10 shadow-lg"
+      className="relative p-2 rounded-xl w-full min-h-screen h-max md:h-screen flex flex-col gap-10 shadow-lg"
       style={{
         backgroundImage: "url(/images/Header.jpg)",
         backgroundSize: "cover",
@@ -42,7 +42,7 @@ function Header() {
         appeal, ensuring every piece enhance your home with enduring elegance
         and superior durability
       </motion.p>
-      <div className="px-10">
+      <div className="px-10 py-0 sm:py-5">
         <motion.button
           className="bg-stone-800 px-6 py-2 rounded-lg w-max tracking-tight hover:bg-stone-900 transition-colors text-slate-100"
           initial={{ opacity: 0, y: 20 }}
