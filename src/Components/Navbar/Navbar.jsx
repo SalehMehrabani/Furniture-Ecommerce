@@ -99,7 +99,7 @@ function Navbar() {
       {/* Responsive items */}
       {open && (
         <motion.div
-          className="w-full h-max bg-white/80 absolute top-20 left-0  z-10 md:hidden flex px-10 py-16 items-center "
+          className="w-full h-max bg-white absolute top-[75px] left-0  z-10 md:hidden flex px-10 py-16 items-center "
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 0.5 }}

@@ -20,7 +20,7 @@ function Header() {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex item-center w-full md:w-3/4 px-4 md:px-10 md:pt-10 pt-5  gap-2 sm:gap-4 text-stone-800 font-semibold text-3xl sm:text-5xl md:text-6xl tracking-tight md:break-normal break-words flex-wrap">
+      <div className="flex item-center w-full md:w-3/4 px-4 md:px-10 md:pt-10 pt-5  gap-2 sm:gap-4 text-stone-800 font-semibold text-4xl sm:text-5xl md:text-6xl tracking-tight md:break-normal break-words flex-wrap">
         {headerWords.map((item, index) => (
           <motion.span
             initial={{ opacity: 0, y: -20 }}
@@ -42,7 +42,7 @@ function Header() {
         appeal, ensuring every piece enhance your home with enduring elegance
         and superior durability
       </motion.p>
-      <div className="px-10 py-0 sm:py-5">
+      <div className="sm:px-10 sm:py-0 p-4">
         <motion.button
           className="bg-stone-800 px-4 md:px-6 py-2 rounded-lg w-max tracking-tight hover:bg-stone-900 transition-colors text-slate-100"
           initial={{ opacity: 0, y: 20 }}

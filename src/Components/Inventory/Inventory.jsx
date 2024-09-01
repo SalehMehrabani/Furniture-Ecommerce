@@ -6,7 +6,7 @@ function Inventory() {
     <section className="w-full h-screen grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 pt-20 gap-5">
       {/* Bed */}
       <div
-        className="col-start-1 col-end-3 row-start-1 row-end-2 lg:row-end-3 rounded-xl shadow flex items-end w-full p-7"
+        className="col-start-1 col-end-3 row-start-1 row-end-2 lg:row-end-3 rounded-xl shadow flex items-end w-full py-7 px-4 sm:p-7"
         style={{
           backgroundImage: "url(/images/Bed.jpg)",
           backgroundSize: "cover",

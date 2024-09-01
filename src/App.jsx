@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen ">
       {loading ? (
         <div className="h-full w-full flex items-center justify-center">
           <div className="loader">

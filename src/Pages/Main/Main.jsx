@@ -10,7 +10,7 @@ import Footer from "../../Components/Footer/Footer";
 
 function Main() {
   return (
-    <div className="max-w-[1300px] h-max overflow-y-auto flex flex-col mx-auto px-5 gap-5 pb-10">
+    <div className="max-w-[1300px] h-max overflow-y-auto flex flex-col mx-auto px-5 gap-5 pb-10 bg-white">
       <Navbar />
       <Header />
       <AboutUs />
