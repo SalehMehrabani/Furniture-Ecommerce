@@ -12,7 +12,7 @@ function Header() {
   ];
   return (
     <header
-      className="relative p-2 rounded-xl w-full h-screen flex flex-col gap-10 shadow-lg"
+      className="relative p-2 rounded-xl w-full h-max md:h-screen flex flex-col gap-10 shadow-lg"
       style={{
         backgroundImage: "url(/images/Header.jpg)",
         backgroundSize: "cover",
@@ -53,7 +53,7 @@ function Header() {
           Join Membership
         </motion.button>
       </div>
-      <span className="absolute bottom-5 left-1/2 -translate-x-1/2 p-4 border border-slate-100 rounded-full text-slate-100 w-max hover:bg-white hover:text-stone-800 transition-colors cursor-pointer">
+      <span className="absolute bottom-5 left-1/2 -translate-x-1/2 p-4 pt-10 md:p-4 border border-slate-100 rounded-full text-slate-100 w-max hover:bg-white hover:text-stone-800 transition-colors cursor-pointer">
         <ArrowLongDownIcon className="size-8 font-bold" />
       </span>
     </header>
