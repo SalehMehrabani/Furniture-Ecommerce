@@ -3,31 +3,31 @@ import Main from "./Pages/Main/Main";
 import { useState, useEffect } from "react";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const [loadingTime, setLoadingTime] = useState(0);
+  // const [loading, setLoading] = useState(true);
+  // const [loadingTime, setLoadingTime] = useState(0);
 
-  useEffect(() => {
-    const handleLoad = () => {
-      const performanceEntries = performance.getEntriesByType("resource");
-      const totalLoadTime = performanceEntries.reduce(
-        (acc, entry) => acc + entry.duration,
-        0
-      );
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     const performanceEntries = performance.getEntriesByType("resource");
+  //     const totalLoadTime = performanceEntries.reduce(
+  //       (acc, entry) => acc + entry.duration,
+  //       0
+  //     );
 
-      setLoadingTime(totalLoadTime + 5000);
-      setLoading(false);
-    };
+  //     setLoadingTime(totalLoadTime + 5000);
+  //     setLoading(false);
+  //   };
 
-    window.addEventListener("load", handleLoad);
+  //   window.addEventListener("load", handleLoad);
 
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("load", handleLoad);
+  //   };
+  // }, []);
 
   return (
     <div className="w-screen h-screen ">
-      {loading ? (
+      {/* {loading ? (
         <div className="h-full w-full flex items-center justify-center">
           <div className="loader">
             <div className="truckWrapper">
@@ -159,11 +159,11 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
             </div>
           </div>
         </div>
-      ) : (
-        <div>
-          <Main />
-        </div>
-      )}
+      ) : ( */}
+      <div>
+        <Main />
+      </div>
+      {/* )} */}
     </div>
   );
 }
