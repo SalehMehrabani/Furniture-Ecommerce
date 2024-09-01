@@ -3,11 +3,15 @@ import {
   HeartIcon,
   MagnifyingGlassIcon,
   ShoppingBagIcon,
+  Bars2Icon,
+  XMarkIcon,
 } from "@heroicons/react/24/outline";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
   return (
     <section className="w-full flex flex-col">
       <nav className="w-full flex items-center justify-between py-5 text-stone-900 px-1">
@@ -22,7 +26,7 @@ function Navbar() {
           Rexrosan.
         </motion.h2>
         <motion.ul
-          className="flex items-center gap-5 tracking-tight "
+          className="hidden items-center gap-5 tracking-tight md:flex text-stone-800"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
@@ -41,13 +45,7 @@ function Navbar() {
           >
             Outdoor
           </motion.li>
-          <motion.li
-            className="hover:cursor-pointer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.8 }}
-          >
-            Lighting
-          </motion.li>
+
           <motion.li
             className="hover:cursor-pointer"
             whileHover={{ scale: 1.1 }}
@@ -76,6 +74,14 @@ function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 0.5, delay: 1 }}
         >
+          <motion.button
+            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 1.1 }}
+            className="block md:hidden"
+            onClick={() => setOpen(!open)}
+          >
+            <Bars2Icon className="size-5 cursor-pointer" />
+          </motion.button>
           <motion.button whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1 }}>
             <MagnifyingGlassIcon className="size-5 cursor-pointer" />
           </motion.button>
@@ -90,6 +96,66 @@ function Navbar() {
           </motion.button>
         </motion.div>
       </nav>
+      {/* Responsive items */}
+      {open && (
+        <motion.div
+          className="w-full h-max bg-white/80 absolute top-20 left-0  z-10 md:hidden flex px-10 py-16 items-center "
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 0.5 }}
+        >
+          <motion.button
+            className="absolute top-5 right-5"
+            whileTap={{ scale: 0.8 }}
+            onClick={() => setOpen(false)}
+          >
+            <XMarkIcon className="size-6 text-stone-800" />
+          </motion.button>
+          <motion.ul
+            className=" gap-5 tracking-tight flex flex-col text-xl font-semibold "
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
+          >
+            <motion.li
+              className="hover:cursor-pointer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              Furniture
+            </motion.li>
+            <motion.li
+              className="hover:cursor-pointer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              Outdoor
+            </motion.li>
+
+            <motion.li
+              className="hover:cursor-pointer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              Dinning
+            </motion.li>
+            <motion.li
+              className="hover:cursor-pointer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              Bathrooms
+            </motion.li>
+            <motion.li
+              className="hover:cursor-pointer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              Mirror & Decors
+            </motion.li>
+          </motion.ul>
+        </motion.div>
+      )}
       <span className="w-full h-[1px] bg-gray-400 rounded-lg"></span>
     </section>
   );

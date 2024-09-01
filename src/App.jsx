@@ -1,6 +1,6 @@
 import "./App.css";
 import Main from "./Pages/Main/Main";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -162,9 +162,6 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
       ) : (
         <div>
           <Main />
-          <p>
-            Total loading time: <strong>{loadingTime.toFixed(2)} ms</strong>
-          </p>
         </div>
       )}
     </div>

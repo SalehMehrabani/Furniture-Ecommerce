@@ -12,7 +12,7 @@ function Preorder() {
       }}
     >
       <motion.h2
-        className=" text-5xl  font-medium w-1/2 text-stone-800 tracking-tight pt-20  px-10"
+        className=" text-5xl  font-medium w-full md:w-1/2 text-stone-800 tracking-tight pt-20  px-10"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.3, delay: 0.5 }}
@@ -20,7 +20,7 @@ function Preorder() {
         Craft Your Ideal Furniture Masterpieces Today
       </motion.h2>
       <motion.p
-        className="w-1/2 text-stone-700 tracking-tight pt-10 px-10"
+        className="w-full md:w-1/2 text-stone-700 tracking-tight pt-10 px-10"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.3, delay: 0.5 }}

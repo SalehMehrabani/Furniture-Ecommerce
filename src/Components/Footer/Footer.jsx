@@ -10,9 +10,9 @@ function Footer() {
       transition={{ ease: "easeOut", duration: 0.5, delay: 0.2 }}
     >
       {/* Top Part */}
-      <div className="w-full flex justify-between items-start gap-20 pb-20 border-b border-gray-400 px-5">
+      <div className="w-full flex justify-between items-start gap-20 pb-20 border-b border-gray-400 px-5 md:flex-row flex-col">
         {/* Sections */}
-        <div className="w-2/3 flex gap-5 items-start justify-between">
+        <div className=" flex gap-10 items-start md:justify-start justify-between flex-wrap">
           {/* Locations */}
           <div className="flex flex-col gap-4">
             <h3 className="text-xl text-stone-800 tracking-tight font-medium">
@@ -45,15 +45,15 @@ function Footer() {
           </div>
         </div>
         {/* News Latter */}
-        <div className="w-1/3 flex flex-col gap-5">
+        <div className=" flex flex-col gap-5">
           <h3 className="text-3xl font-semibold text-stone-900 tracking-tight">
             Sign up for our newsletter
           </h3>
-          <div className="flex gap-5 items-center justify-between border border-gray-400 rounded-lg p-1 shadow pl-3">
+          <div className="w-full flex gap-5 items-center justify-between border border-gray-400 rounded-lg p-1 shadow pl-3">
             <input
               type="text"
               placeholder="Enter email address"
-              className="outline-none border-none bg-white placeholder:font-normal placeholder:text-stone-600 placeholder:tracking-tight text-stone-800 tracking-tight p-3"
+              className="outline-none border-none w-full md:w-max bg-white placeholder:font-normal placeholder:text-stone-600 placeholder:tracking-tight text-stone-800 tracking-tight p-3"
             />
             <motion.button
               className="bg-stone-800 text-slate-100 px-10 py-2 rounded-xl"
@@ -65,7 +65,7 @@ function Footer() {
         </div>
       </div>
       {/* Bottom Part */}
-      <div className="w-full flex items-center justify-between p-5">
+      <div className="w-full flex items-center justify-between sm:flex-row flex-col gap-10 p-5">
         <div className="flex items-center gap-3">
           <SocialIcon
             url="https://www.linkedin.com/in/amirsaleh-naderzadeh-mehrabani/"
