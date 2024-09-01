@@ -29,7 +29,7 @@ function Preorder() {
         with drawer, our platform offers endless possibilites. Start crafting
         your dream furniture now and bring you vison to lif!
       </motion.p>
-      <div className="pt-10 px-10">
+      <div className="pt-10 px-10 pb-0 sm:py-10">
         <motion.button
           className="bg-stone-800 rounded-lg shadow text-slate-100 w-max px-5 py-2"
           initial={{ opacity: 0, y: -20 }}
