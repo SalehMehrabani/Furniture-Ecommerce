@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function Preorder() {
   return (
     <section
-      className="w-full h-[70vh] rounded-lg flex flex-col  "
+      className="w-full h-max lg:h-[70vh] rounded-lg flex flex-col  "
       style={{
         backgroundImage: "url(/images/Preorder.jpg)",
         backgroundSize: "cover",
