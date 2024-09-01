@@ -20,7 +20,7 @@ function Header() {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex item-center w-full md:w-3/4 px-4 md:px-10 pt-10 gap-4 text-stone-800 font-semibold text-5xl md:text-6xl tracking-tight md:break-normal break-words flex-wrap">
+      <div className="flex item-center w-full md:w-3/4 px-4 md:px-10 pt-10 gap-4 text-stone-800 font-semibold text-3xl sm:text-5xl md:text-6xl tracking-tight md:break-normal break-words flex-wrap">
         {headerWords.map((item, index) => (
           <motion.span
             initial={{ opacity: 0, y: -20 }}
@@ -42,7 +42,7 @@ function Header() {
         appeal, ensuring every piece enhance your home with enduring elegance
         and superior durability
       </motion.p>
-      <div className="p-10 md:px-10">
+      <div className="px-10">
         <motion.button
           className="bg-stone-800 px-6 py-2 rounded-lg w-max tracking-tight hover:bg-stone-900 transition-colors text-slate-100"
           initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ function Header() {
           Join Membership
         </motion.button>
       </div>
-      <span className="absolute bottom-5 left-1/2 -translate-x-1/2 p-4 border border-slate-100 rounded-full text-slate-100 w-max hover:bg-white hover:text-stone-800 transition-colors cursor-pointer">
+      <span className="hidden md:absolute bottom-5 left-1/2 -translate-x-1/2 p-4 border border-slate-100 rounded-full text-slate-100 w-max hover:bg-white hover:text-stone-800 transition-colors cursor-pointer">
         <ArrowLongDownIcon className="size-8 font-bold" />
       </span>
     </header>

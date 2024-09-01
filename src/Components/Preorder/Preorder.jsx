@@ -12,7 +12,7 @@ function Preorder() {
       }}
     >
       <motion.h2
-        className=" text-5xl font-medium w-full md:w-1/2 text-stone-800 tracking-tight pt-10 md:pt-20  px-10"
+        className="text-3xl md:text-5xl font-medium w-full md:w-1/2 text-stone-800 tracking-tight pt-10 md:pt-20  px-10"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.3, delay: 0.5 }}

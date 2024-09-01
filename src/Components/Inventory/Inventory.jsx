@@ -15,7 +15,7 @@ function Inventory() {
         }}
       >
         <motion.span
-          className="tracking-tighter cursor-pointer rounded-full px-5 py-1 bg-white/30 text-lg md:text-2xl text-stone-800"
+          className="tracking-tighter cursor-pointer rounded-full px-5 py-1 bg-white/30 text-lg md:text-xl text-stone-800"
           whileHover={{ backgroundColor: "rgb(255 255 255 / 0.7)" }}
         >
           Our Beds Collection: Your Sleep Space with Comfort and style -
