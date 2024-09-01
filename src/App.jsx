@@ -14,7 +14,7 @@ function App() {
         0
       );
 
-      setLoadingTime(totalLoadTime);
+      setLoadingTime(totalLoadTime + 5000);
       setLoading(false);
     };
 
