@@ -18,7 +18,7 @@ function Footer() {
             <h3 className="text-xl text-stone-800 tracking-tight font-medium">
               Locations:
             </h3>
-            <div className="flex flex-col gap-1  tracking-tight text-stone-700">
+            <div className="flex flex-col gap-1 text-sm tracking-tight text-stone-700">
               <span>Rexrosan Furniture Store 123</span>
               <span>Harmony Street, Suite 245</span>
               <span>Germany, 12345</span>
@@ -29,7 +29,7 @@ function Footer() {
             <h3 className="text-xl text-stone-800 tracking-tight font-medium">
               Contact US:
             </h3>
-            <div className="flex flex-col gap-1  tracking-tight text-stone-700">
+            <div className="flex flex-col gap-1 text-sm tracking-tight text-stone-700">
               <span>Phone: +98 9303369912</span>
             </div>
           </div>
@@ -38,7 +38,7 @@ function Footer() {
             <h3 className="text-xl text-stone-800 tracking-tight font-medium">
               Email:
             </h3>
-            <div className="flex flex-col gap-1  tracking-tight text-stone-700">
+            <div className="flex flex-col gap-1 text-sm tracking-tight text-stone-700">
               <span>For Purchase: SalehMehrabani.business@gmail.com</span>
               <span>For Support: SalehMehrabani.business@gmail.com</span>
             </div>
