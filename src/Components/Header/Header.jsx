@@ -20,7 +20,7 @@ function Header() {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex item-center w-full md:w-3/4 px-4 md:px-10 py-10 gap-2 sm:gap-4 text-stone-800 font-semibold text-3xl sm:text-5xl md:text-6xl tracking-tight md:break-normal break-words flex-wrap">
+      <div className="flex item-center w-full md:w-3/4 px-4 md:px-10 md:pt-10 pt-5  gap-2 sm:gap-4 text-stone-800 font-semibold text-3xl sm:text-5xl md:text-6xl tracking-tight md:break-normal break-words flex-wrap">
         {headerWords.map((item, index) => (
           <motion.span
             initial={{ opacity: 0, y: -20 }}
