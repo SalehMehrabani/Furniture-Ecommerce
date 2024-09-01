@@ -60,7 +60,7 @@ function Products() {
   return (
     <section className="w-full flex flex-col gap-10 pt-20 px-2">
       {/* Header */}
-      <div className="w-full flex justify-between items-center">
+      <div className="w-full flex justify-between items-center md:flex-row flex-col gap-5">
         <motion.h2
           className="text-5xl text-stone-800 font-medium tracking-tight"
           initial={{ opacity: 0, y: -20 }}
