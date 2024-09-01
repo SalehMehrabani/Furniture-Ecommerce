@@ -20,7 +20,7 @@ function Header() {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex item-center w-full md:w-3/4 px-3 md:px-10 pt-10 gap-4 text-stone-800 font-semibold text-4xl md:text-6xl tracking-tight md:break-normal break-words flex-wrap">
+      <div className="flex item-center w-full md:w-3/4 px-4 md:px-10 pt-10 gap-4 text-stone-800 font-semibold text-5xl md:text-6xl tracking-tight md:break-normal break-words flex-wrap">
         {headerWords.map((item, index) => (
           <motion.span
             initial={{ opacity: 0, y: -20 }}
@@ -33,7 +33,7 @@ function Header() {
         ))}
       </div>
       <motion.p
-        className="px-10 w-full md:w-3/4 text-lg tracking-tight text-stone-800 "
+        className="px-4 md:px-10 w-full md:w-3/4 text-lg tracking-tight text-stone-800 "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
