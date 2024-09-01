@@ -1,11 +1,12 @@
+import { motion } from "framer-motion";
+
 import AboutUs from "../../Components/AboutUs/AboutUs";
 import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Navbar/Navbar";
-
-import { motion } from "framer-motion";
 import Products from "../../Components/Products/Products";
 import Inventory from "../../Components/Inventory/Inventory";
 import Preorder from "../../Components/Preorder/Preorder";
+import Footer from "../../Components/Footer/Footer";
 
 function Main() {
   return (
@@ -76,6 +77,7 @@ function Main() {
       <Products />
       <Inventory />
       <Preorder />
+      <Footer />
     </div>
   );
 }

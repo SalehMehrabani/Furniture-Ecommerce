@@ -84,16 +84,11 @@ function Products() {
         </motion.div>
       </div>
       {/* Products */}
-      <motion.div
-        className="flex items-center gap-3 flex-wrap justify-between w-full"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.3, delay: 0.2 }}
-      >
+      <div className="flex items-center gap-3 flex-wrap justify-between w-full">
         {productData.map((item, index) => (
           <Product data={item} key={index} />
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }
