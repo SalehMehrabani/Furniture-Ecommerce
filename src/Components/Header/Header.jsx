@@ -44,7 +44,7 @@ function Header() {
       </motion.p>
       <div className="px-10 py-0 sm:py-5">
         <motion.button
-          className="bg-stone-800 px-6 py-2 rounded-lg w-max tracking-tight hover:bg-stone-900 transition-colors text-slate-100"
+          className="bg-stone-800 px-4 md:px-6 py-2 rounded-lg w-max tracking-tight hover:bg-stone-900 transition-colors text-slate-100"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 0.5 }}
