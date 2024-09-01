@@ -49,15 +49,18 @@ function Footer() {
           <h3 className="text-3xl font-semibold text-stone-900 tracking-tight">
             Sign up for our newsletter
           </h3>
-          <div className="flex gap-5 items-center justify-between border border-gray-400 rounded-lg p-1 shadow pl-5">
+          <div className="flex gap-5 items-center justify-between border border-gray-400 rounded-lg p-1 shadow pl-3">
             <input
               type="text"
               placeholder="Enter email address"
               className="outline-none border-none bg-white placeholder:font-normal placeholder:text-stone-600 placeholder:tracking-tight text-stone-800 tracking-tight p-3"
             />
-            <button className="bg-stone-800 text-slate-100 px-10 py-2 rounded-xl">
+            <motion.button
+              className="bg-stone-800 text-slate-100 px-10 py-2 rounded-xl"
+              whileTap={{ scale: 0.8 }}
+            >
               Enter
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
